@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<form action="action_page.php">
+<!--The list attribute of the <input> element, must refer to the id attribute of the <datalist> element.-->
+<input list="browsers" name="browser">
+<!--The <datalist> element specifies a list of pre-defined options for an <input> element.Users will see a drop-down list of pre-defined options as they input data.-->
+<datalist id="browsers">
+	<option value="Internet Explorer">
+	<option value="Firefox">
+	<option value="Opera">
+	<option value="Chrome">
+	<option value="Safari">
+	</datalist>
+	<input type="submit">
+	</form>
+	<p><b>Note:</b>The datalist tag is not supported in Safari or IE9 (and earlier).</p>
+	</body>
+	</html>

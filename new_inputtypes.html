@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+<body>
+<p>1.Numeric restrictions will apply in the input field:</p>
+<!--The <input type="number"> defines a numeric input field.
+
+You can also set restrictions on what numbers are accepted.
+
+The following example displays a numeric input field, where you can enter a value from 1 to 5:-->
+
+<form action="action_page.php">
+	Quantity (between 1 and 5):
+	<input type="number" name="quantity" min="1" max="5">
+	<input type="submit">
+	</form>
+	
+	<p><b>Note:</b>Type="number" is not supported in IE9 and earlier.</p>
+	
+	<p>Or:
+Depending on browser support:<br>
+Fixed steps will apply in the input field.
+</p>
+<!--The following example displays a numeric input field, where you can enter a value from 0 to 100, in steps of 10. The default value is 30:-->
+	<form action="action_page.php">
+	Quantity:
+	<input type="number" name="quantity" min="0" max="100" step="10" value="30">
+	<input type="submit">
+	</form>
+<p>2.A date picker can pop-up when you enter the input field.
+</p>
+
+<form action="action_page.php">
+Birthday:
+<!--The <input type="date"> is used for input fields that should contain a date.-->
+<input type="date" name="bday">
+<input type="submit">
+</form>
+<p><strong>Note:</strong> type="date" is not supported in Firefox, or Internet Explorer 11 and earlier versions.</p>	
+
+<p><b>Or:You can also add restrictions to dates:</b></P>	
+<form action="action_page.php">
+Enter a date before 1980-01-01:<br>
+<input type="date" name="bday" max="1979-12-31"><br><br>
+Enter a date after 2000-01-01:<br>
+<input type="date" name="bday" min="2000-01-02"><br><br>
+<input type="submit">
+</form>
+
+<p>3.
+Depending on browser support:<br>
+A color picker can pop-up when you enter the input field.
+</p>
+<!--The <input type="color"> is used for input fields that should contain a color.
+
+Depending on browser support, a color picker can show up in the input field.-->
+<form action="action_page.php">
+ Select your Favorite color:
+ <input type="color" name="favcolor" value="#ff4012">
+ <input type="submit">
+ </form>
+ 
+ <p>4.The input type "range" can be displayed as a slider control.
+</p>
+<!--The <input type="range"> is used for input fields that should contain a value within a range.-->
+<form action="action_page.php">
+ Points:
+ <input type="range" name="points" min="0" max="10">
+ <input type="submit">
+ </form>
+ <p>
+<b>Note:</b>
+type="range" is not supported in Internet Explorer 9 and earlier versions.
+</p>
+
+<p>5.A date picker can pop-up when you enter the input field.
+</p>
+<!--The <input type="month"> allows the user to select a month and year.
+
+Depending on browser support, a date picker can show up in the input field.-->
+<form action="action_page.php">
+Birthday (month and year):
+<input type="month" name="bdaymonth">
+<input type="submit">
+</form>
+<p><strong>Note:</strong> type="month" is not supported in Firefox, or Internet Explorer 11 and earlier versions.</p>
+	
+<p>6.A date picker can pop-up when you enter the input field.
+</p>
+<form action="action_page.php">
+Select a week:
+<!--The <input type="week"> allows the user to select a week and year.-->
+<input type="week" name="year_weeK">
+<input type="submit">
+</form>	
+
+
+<p>7.A time picker might pop-up when you enter the input field.
+</p>
+
+<form action="action_page.php">
+Select a time:
+<input type="time" name="usr_time">
+<input type="submit">
+</form>
+<p><strong>Note:</strong> type="time" is not supported in Firefox, or Internet Explorer 12 and earlier versions.</p>
+
+<p>8.A date picker can pop-up when you enter the input field.
+</p>
+
+<form action="action_page.php">
+Birthday (date and time):
+<!--The <input type="datetime-local"> specifies a date and time input field, with no time zone.-->
+<input type="datetime-local" name="bdaytime">
+<input type="submit" value="Send">
+</form>
+
+<p>9.Email</p>
+<form action="action_page.php">
+  E-mail:
+  <input type="email" name="email">
+  <input type="submit">
+</form>
+<p>
+<b>Note:</b>type="email" is not supported in IE9 and earlier.</p>
+
+
+<p>10.Search</p>
+
+<form action="action_page.php">
+Search Google:
+<!--The <input type="search"> is used for search fields (a search field behaves like a regular text field).-->
+<input type="search" name="googlesearch">
+<input type="submit">
+</form>
+
+<p>11.Telephone</p>
+<form action="action_page.php">
+  Telephone:
+  <!--The <input type="tel"> is used for input fields that should contain a telephone number.-->
+  <input type="tel" name="usrtel">
+  <input type="submit">
+</form>
+
+<p><b>Note:</b> type="tel" is only supported in Safari 8 and newer versions.</p>
+
+<p>12.URL</p>
+
+<form action="action_page.php">
+  Add your homepage:
+  <!--The <input type="url"> is used for input fields that should contain a URL address.
+
+Depending on browser support, the url field can be automatically validated when submitted.
+
+Some smartphones recognize the url type, and adds ".com" to the keyboard to match url input.-->
+  <input type="url" name="homepage">
+  <input type="submit">
+</form>
+
+<p><b>Note:</b>
+The type="url" is not supported in IE9 and earlier versions.</p>
+	</body>
+	</html>
+	

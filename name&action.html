@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<body>
+<!--The action attribute defines the action to be performed when the form is submitted.
+
+The common way to submit a form to a server, is by using a submit button.
+
+Normally, the form is submitted to a web page on a web server.
+
+In the example above, a server-side script is specified to handle the submitted form-->
+<!--The method attribute specifies the HTTP method (GET or POST) to be used when submitting the forms-->
+<!--You can use GET (the default method):
+
+If the form submission is passive (like a search engine query), and without sensitive information.
+
+When you use GET, the form data will be visible in the page addres-->
+<!--You should use POST:
+
+If the form is updating data, or includes sensitive information (password).
+
+POST offers better security because the submitted data is not visible in the page address.-->
+<form action="html_form_submit.asp" method="get">
+  First name:<br>
+  <input type="text" value="Mickey">
+  <br>
+  <!--To be submitted correctly, each input field must have a name attribute.
+
+This example will only submit the "Last name" input field:-->
+  Last name:<br>
+  <input type="text" name="lastname" value="Mouse">
+  <br><br>
+  <input type="submit" value="Submit">
+</form> 
+
+<p>If you click the "Submit" button, the form-data will be sent to a page called "action_page.php".</p>
+
+<p>Notice that the value of the "First name" field will not be submitted, because the input element does not have a name attribute.</p>
+
+</body>
+
+</html>
